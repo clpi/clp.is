@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit adapt && svelte-kit build",
-		"netlify": "svelte-kit build adapt netlify",
-		"static": "svelte-kit build adapt static",
+		"build": "svelte-kit build && svelte-kit adapt",
+		"netlify": "svelte-kit build && svelte-kit adapt",
+		"static": "svelte-kit build && svelte-kit adapt",
 		"node": "svelte-kit build adapt node",
     "anetlify": "svelte-kit adapt netlify",
     "astatic": "svelte-kit adapt static",
