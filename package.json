@@ -3,12 +3,18 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"start": "svelte-kit start"
+		"build": "svelte-kit adapt && svelte-kit build",
+		"netlify": "svelte-kit build adapt netlify",
+		"static": "svelte-kit build adapt static",
+		"node": "svelte-kit build adapt node",
+    "anetlify": "svelte-kit adapt netlify",
+    "astatic": "svelte-kit adapt static",
+    "rollup": "rollup -c",
+		"start": "svelte-kit start",
+		"adapt": "svelte-kit adapt"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-netlify": "^1.0.0-next.0",
-		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "^1.0.0-next.0",
 		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
@@ -16,6 +22,7 @@
 		"tabler-icons-svelte": "^1.3.0"
 	},
 	"dependencies": {
-		"d3-interpolate": "^2.0.1"
+		"d3-interpolate": "^2.0.1",
+		"rollup": "^2.35.1"
 	}
 }

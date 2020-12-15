@@ -1,4 +1,4 @@
 [build]
   command = "npm run build"
-  publish = "build/"
+  publish = ".svelte/build/optimized/client/_app/"
   functions = "functions/"

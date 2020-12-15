@@ -4,3 +4,6 @@ node_modules
 /build
 /functions
 **target/
+
+# Local Netlify folder
+.netlify
