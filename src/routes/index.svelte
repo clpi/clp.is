@@ -6,13 +6,16 @@
 </script>
 
 <div class="index">
-    <Menubar/>
+    <Nav/>
     <div class="content">
     <h1>clp.is</h1>
     <h3>Welcome!</h3>
     <p>Website currently under construction!</p>
-    <Input>Input here</Input>
+    <form>
+      <Input>Input here</Input>
+      <Input>Input there</Input>
     <Btn btn="filled">Contact me!</Btn>
+    </form>
   </div>
 </div>
 

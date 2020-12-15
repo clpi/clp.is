@@ -1,5 +1,6 @@
 <script>
   import Link from './Link.svelte';
+  import Btn from './Btn.svelte';
 </script>
 <nav>
 <ul>
@@ -29,9 +30,13 @@
 <style>
   nav {
     color: #91ffaa;
+    height: 60px;
+    vertical-align: center;
+
   }
   .left {
     color: #91ffaa;
+    vertical-align: center;
   }
   a {
     color: #91ffaa;
@@ -41,9 +46,10 @@
     font-size: 1.1rem;
   }
   li {
+    vertical-align: center;
     float: left;
-    margin: 0 0.8vw 0 0.8vw;
-    border-bottom: 2px solid rgba(100, 100, 100, 0);
+    margin: 0 1.6vw 0 1.6vw;
+    border-bottom: 2pxrgba(100, 100, 100, 0);
   }
 ul {
   /*justify-content: center;*/
@@ -51,8 +57,12 @@ ul {
   margin: 0 auto;
   list-style: none;
   padding-right: 5vw;
+  vertical-align: center;
   /* margin: 0vh 5vw 0vh 5vw; */
 }
+  .active {
+    background-color: #91ffaa;
+  }
   nav {
     background-color: rgba(0,0,0,0.15);
     font-size: 1.1rem;

@@ -3,6 +3,9 @@
 
 </script>
 <style>
+  div {
+    margin: 0;
+  }
 .menu {
   background-color: rgba(0,0,0,0.15);
   background-image: linear-gradient(rgba(255,255,255,0.015), rgba(0,0,0,0));
@@ -11,14 +14,14 @@
   overflow: hidden;
   text-align: center;
   width: 100%;
-  min-width: 100%;
+  /*min-width: 100%;*/
   /*min-height: 40px;*/
-  height: 50px;
+  height: 40px;
   padding: 10px 0vw 10px 0vw;
   max-height: 40px;
   margin: 0;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.12);
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 ul {
   margin: auto;
@@ -62,22 +65,26 @@ li {
   <ul>
     <div class="left">
       <li>
-        <Btn btn="fill">
+        <a href="/">
+        <Btn btn="outline grad-rev">
           Home
         </Btn>
+        </a>
       </li>
       <li>
-        <Btn btn="outline">
+        <a href="/about">
+        <Btn btn="outline grad-rev">
           About
         </Btn>
+        </a>
       </li>
       <li>
-        <Btn btn="outline">
+        <Btn btn="outline grad-rev">
           Contact
         </Btn>
       </li>
       <li>
-        <Btn btn="outline">
+        <Btn btn="outline grad-rev">
           Projects
         </Btn>
       </li>
@@ -86,12 +93,12 @@ li {
     </div>
     <div class="right">
       <li>
-        <Btn btn="outline">
+        <Btn btn="outline grad-rev">
           Stats
         </Btn>
       </li>
       <li>
-        <Btn btn="outline">
+        <Btn btn="outline grad-rev">
           Profile
         </Btn>
       </li>

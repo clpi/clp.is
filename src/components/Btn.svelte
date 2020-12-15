@@ -21,12 +21,12 @@ button {
   box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
 }
 .raised {
-  background-color: #333;
+  background-color: rgba(255,255,255,0.1);
   /*background-image: linear-gradient(rgba(255,255,255,0.04), rgba(0,0,0,0.01));*/
   box-shadow: 0px 1px 1px #0a0a0a;
   border: none;
   border-top: 1px solid #5a5a5a;
-  border-bottom: 1px solid rgba(0,0,0,0);
+  border-bottom: 2px solid rgba(0,0,0,0);
   text-shadow: 0px -2px 0.5px #000;
   color: #91ffaa;
 }
@@ -49,11 +49,12 @@ button {
 
 }
 .outline {
-	background-color: rgba(255,255,255,0.08);
+	background-color: rgba(255,255,255,0.1);
   color: #91ffaa;
-  border-top: 1px solid #91ffaa;
-  border-bottom: 2px solid rgba(0,0,0,0.6);
+  border-top: 1px ridge #91ffaa;
+  border-bottom: 1px solid rgba(0,0,0,0.6);
   padding: 2px 16px 2px 16px;
+  border-radius: 0px;
   /* box-shadow: 1px 2px 2px rgba(0,0,0,0.1); */
 }
 .embed {
