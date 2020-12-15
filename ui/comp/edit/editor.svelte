@@ -1,0 +1,29 @@
+<script>
+  export let markdown = "";
+</script>
+
+<style>
+  section {
+    width: 100%;
+    min-height: 80vh;
+    margin: 0;
+    border: 0.1rem solid #333;
+    flex: 1.5;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    resize: none;
+    margin: 0;
+    border: none;
+    color: #e8e9f3;
+    background-color: #151519;
+  }
+</style>
+
+<section>
+  <!-- svelte-ignore a11y-autofocus -->
+  <textarea bind:value="{markdown}" autofocus />
+</section>
