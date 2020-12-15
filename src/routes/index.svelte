@@ -18,6 +18,7 @@
 
 <style>
   .index {
+    overflow: hidden;
     /* background-color: #282a2c; */
     background-color: #1e1c31;
     position: absolute;
