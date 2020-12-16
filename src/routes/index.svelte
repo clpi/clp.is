@@ -53,7 +53,7 @@
     color: #cbe3e7;
   }
   .content {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.07);
     padding: 10px 40px 30px 40px;
     border-radius: 6px;
     width: 90%;
