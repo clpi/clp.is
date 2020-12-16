@@ -8,14 +8,10 @@
 <div class="index">
     <Nav/>
     <div class="content">
-    <h1>clp.is</h1>
+    <h1>hi there</h1>
     <h3>Welcome!</h3>
     <p>Website currently under construction!</p>
-    <form>
-      <Input>Input here</Input>
-      <Input>Input there</Input>
-    <Btn btn="filled">Contact me!</Btn>
-    </form>
+    <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
   </div>
 </div>
 
@@ -39,10 +35,10 @@
     padding: 10px 5px 10px 5px;
     text-align: center;
 		text-transform: uppercase;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		font-weight: 100;
 		line-height: 1.1;
-		margin: 4rem auto;
+		margin: 2rem auto;
 		max-width: 14rem;
   }
   button {

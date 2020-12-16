@@ -2,54 +2,21 @@
   import Btn from '$components/Btn.svelte';
   import Input from '$components/Input.svelte';
   import Nav from '$components/Nav.svelte';
+  /* import Menubar from '$components/Menubar.svelte'; */
 </script>
 
-<div class="contact">
+<div class="projects">
     <Nav/>
     <div class="content">
-    <h1>contact me</h1>
-    <p>You can also reach me at clp at (this website's domain name</p>
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-      <label>Your Name:<br/><br/><input type="text" name="name" /></label>
-      </p>
-      <p>
-      <label>Your Email:<br/><br/> <input type="email" name="email" /></label>
-      </p>
-      <p>
-      <label>Message:<br/><br/> <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <Btn type="submit" btn="filled">Send</Btn>
-      </p>
-    </form>
+    <h1>projects</h1>
+    <p>Website currently under construction!</p>
+    <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
   </div>
 </div>
 
 <style>
-  textarea {
-    border-radius: 4px;
-    border: 1px solid #91ffaa;
-    padding: 5px 10px 5px 10px;
-    margin: 0.3vh 0.5vw 0.3vh 0.5vw;
-    color: #91ffaa;
-    max-width: 60%;
-    width: 60%;
-    height: 100px;
-    background: #1e1c31;
-    box-shadow: 0px 2px 1px #000;
-  }
-  input {
-    border-radius: 4px;
-    border: 1px solid #91ffaa;
-    padding: 10px 20px 10px 20px;
-    margin: 0.1vh 0.3vw 0.1vh 0.3vw;
-    color: #91ffaa;
-    background: #1e1c31;
-    box-shadow: 0px 2px 1px #000;
-  }
-  .contact {
-    overflow-x: hidden;
+  .about {
+    overflow: hidden;
     /* background-color: #282a2c; */
     background-color: #1e1c31;
     position: absolute;
@@ -57,6 +24,10 @@
     width: 100%;
     height: 100%;
     max-height: 100vh;
+  }
+  a {
+    color: #91ffaa;
+    text-decoration: none;
   }
   h1 {
     color: #cbe3e7;
@@ -68,6 +39,9 @@
 		line-height: 1.1;
 		margin: 2rem auto;
 		max-width: 14rem;
+  }
+  button {
+    display: inline;
   }
   div {
     display: block;

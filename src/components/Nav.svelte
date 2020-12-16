@@ -6,7 +6,7 @@
 <ul>
   <div class="left">
     <li class="link left">
-      <a href="/home">
+      <a href="/">
         home
       </a>
     </li>
@@ -21,8 +21,13 @@
       </a>
     </li>
     <li class="link left">
-      <a href="/about">
+      <a href="/projects">
         projects
+      </a>
+    </li>
+    <li class="link right">
+      <a href="http://github.com/clpi">
+        github
       </a>
     </li>
   </div>
@@ -41,7 +46,8 @@
   a {
     color: #91ffaa;
     text-decoration: none;
-    padding: 1.8vh 0vw 1.8vh 0vw;
+    padding: 10px 8px 10px 8px;
+    margin-top: 10px;
     display: inline-block;
     font-size: 1.1rem;
   }
@@ -49,7 +55,12 @@
     vertical-align: center;
     float: left;
     margin: 0 1.6vw 0 1.6vw;
-    border-bottom: 2pxrgba(100, 100, 100, 0);
+  }
+  a:hover {
+    color: #b1ffdc;
+    border-bottom: 2px solid #91ffaa;
+    border-radius: 3px;
+    transition: border cubic-bezier(2.0, -0.28, 0.735, 0.045);
   }
 ul {
   /*justify-content: center;*/
