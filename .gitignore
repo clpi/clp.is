@@ -1,9 +1,8 @@
 .DS_Store
 node_modules
 /.svelte
-/build
 /functions
 **target/
-
+/build
 # Local Netlify folder
 .netlify
