@@ -33,12 +33,6 @@
   </div>
 </nav>
 <style>
-  nav {
-    color: #91ffaa;
-    height: 60px;
-    vertical-align: center;
-
-  }
   .left {
     color: #91ffaa;
     vertical-align: center;
@@ -88,6 +82,9 @@ ul {
     margin: 0;
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.12);
     border-bottom: 1px solid rgba(0,0,0,0.3);
+    color: #91ffaa;
+    height: 60px;
+    vertical-align: center;
 
   }
 </style>

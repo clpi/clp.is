@@ -36,22 +36,27 @@
     max-width: 60%;
     width: 60%;
     height: 100px;
-    background: #1e1c31;
+    background: #211f36;
     box-shadow: 0px 2px 1px #000;
   }
-  input {
-    border-radius: 4px;
-    border: 1px solid #91ffaa;
+  input, textarea {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #91ffaa;
+    border-top: 1px solid rgba(0,0,0,0.6);
     padding: 10px 20px 10px 20px;
     margin: 0.1vh 0.3vw 0.1vh 0.3vw;
     color: #91ffaa;
-    background: #1e1c31;
-    box-shadow: 0px 2px 1px #000;
+    background: #211f36;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+  }
+  input:active, textarea:active {
+    border: 1px solid #fff;
   }
   .contact {
     overflow-x: hidden;
     /* background-color: #282a2c; */
-    background-color: #1e1c31;
+    background-color: #211f36;
     position: absolute;
     display: block;
     width: 100%;
@@ -79,19 +84,17 @@
   }
   .content {
     background-color: rgba(255,255,255,0.07);
-    padding: 10px 40px 30px 40px;
+    padding: 10px 20px 40px 20px;
     border-radius: 6px;
-    width: 90%;
+    width: 85%;
+    max-width: 95%;
     color: #cbe3e7;
-    border: 1px solid #1a1a1a;
-    border-top: 2px solid #91ffaa;
+    border: 1px solid #111;
+    border-top: 1px solid #91ffaa;
     border-bottom: 2px solid #000;
-    /*border-bottom: 2px solid rgba(230, 190, 140, 0.4);*/
     box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     margin: 3% auto 3% auto;
     text-align: center;
-    /*border-bottom: 1px solid #fc9;*/
-    /*border-top: 2px solid #000;*/
   }
 	:root {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

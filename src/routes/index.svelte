@@ -8,18 +8,17 @@
 <div class="index">
     <Nav/>
     <div class="content">
-    <h1>hi there</h1>
-    <h3>Welcome!</h3>
-    <p>Website currently under construction!</p>
-    <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
+      <h1>/index</h1>
+      <h3>Welcome!</h3>
+      <p>Website currently under construction!</p>
+      <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
   </div>
 </div>
 
 <style>
   .index {
     overflow: hidden;
-    /* background-color: #282a2c; */
-    background-color: #1e1c31;
+    background-color: #211f36;
     position: absolute;
     display: block;
     width: 100%;
@@ -34,7 +33,6 @@
     color: #cbe3e7;
     padding: 10px 5px 10px 5px;
     text-align: center;
-		text-transform: uppercase;
 		font-size: 3.5rem;
 		font-weight: 100;
 		line-height: 1.1;
@@ -54,20 +52,24 @@
   }
   .content {
     background-color: rgba(255,255,255,0.07);
-    padding: 10px 40px 30px 40px;
-    border-radius: 6px;
-    width: 90%;
+    padding: 10px 20px 40px 20px;
+    border-radius: 10px;
+    width: 85%;
     max-width: 95%;
     color: #cbe3e7;
     border: 1px solid #1a1a1a;
-    border-top: 2px solid #91ffaa;
-    border-bottom: 2px solid #000;
-    /*border-bottom: 2px solid rgba(230, 190, 140, 0.4);*/
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    border-top: 1px solid #91ffaa;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
     margin: 3% auto 3% auto;
     text-align: center;
     /*border-bottom: 1px solid #fc9;*/
     /*border-top: 2px solid #000;*/
+  }
+  .sidebar {
+    display: block;
+    position: relative;
+    float: left;
   }
 	:root {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
