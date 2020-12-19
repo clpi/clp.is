@@ -2,10 +2,11 @@
   import Btn from '$components/Btn.svelte';
   import Input from '$components/Input.svelte';
   import Nav from '$components/Nav.svelte';
+    export let selected = "contact";
 </script>
 
 <div class="contact">
-    <Nav/>
+  <Nav {selected}/>
     <div class="content">
     <h1>contact me</h1>
     <p>You can also reach me at clp at (this website's domain name</p>

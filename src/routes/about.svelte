@@ -3,10 +3,14 @@
   import Input from '$components/Input.svelte';
   import Nav from '$components/Nav.svelte';
   /* import Menubar from '$components/Menubar.svelte'; */
+    let selected = "about";
 </script>
 
+<svelte:head>
+  <title>About - clp.is</title>
+</svelte:head>
 <div class="about">
-    <Nav/>
+  <Nav {selected}/>
     <div class="content">
     <h1>about</h1>
     <p>Website currently under construction!</p>

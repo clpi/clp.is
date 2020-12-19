@@ -1,27 +1,28 @@
 <script>
   import Link from './Link.svelte';
   import Btn from './Btn.svelte';
+  export let selected;
 </script>
 <nav>
 <ul>
   <div class="left">
     <li class="link left">
-      <a href="/">
+      <a href="/" class:selected={selected==="/"}>
         home
       </a>
     </li>
     <li class="link left">
-      <a href="/about">
+      <a href="/about" class:selected={selected==="about"}>
         about
       </a>
     </li>
     <li class="link left">
-      <a href="/contact">
+      <a href="/contact" class:selected={selected=="contact"}>
         contact
       </a>
     </li>
     <li class="link left">
-      <a href="/projects">
+      <a href="/projects" class:selected={selected=="projects"}>
         projects
       </a>
     </li>
@@ -37,6 +38,9 @@
     color: #91ffaa;
     vertical-align: center;
   }
+  .selected {
+    border-bottom: 1px solid #81ee99;
+  }
   a {
     color: #91ffaa;
     text-decoration: none;
@@ -51,10 +55,14 @@
     margin: 0 1.6vw 0 1.6vw;
   }
   a:hover {
-    color: #b1ffdc;
-    border-bottom: 2px solid #91ffaa;
+    color: #71dd99;
+    border-bottom: 1px solid #91ffaa;
     border-radius: 3px;
-    transition: border cubic-bezier(2.0, -0.28, 0.735, 0.045);
+    text-shadow: 2px 2px 2px #000;
+    transition: border-bottom 2s, text-shadow 1s;
+  }
+  a:active {
+    color: #a1ffca;
   }
 ul {
   /*justify-content: center;*/
@@ -65,6 +73,11 @@ ul {
   vertical-align: center;
   /* margin: 0vh 5vw 0vh 5vw; */
 }
+  ul::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
   .active {
     background-color: #91ffaa;
   }

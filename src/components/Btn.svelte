@@ -18,7 +18,8 @@ button {
   color: #1c1f23;
   border: 1px solid #1c1f23;
   text-shadow: none;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  /* box-shadow: 0px 0px 8px #000; */
 }
 .raised {
   background-color: rgba(255,255,255,0.1);
@@ -77,18 +78,21 @@ button {
   border-radius: 0px;
 }
 button:hover {
-  color: #91ee99;
+  color: #81de89;
   background-color: rgba(255,255,255,0.1);
   /*background-image: rgba(255,255,255,100);*/
   outline: 0;
-  border-radius: 4px;
-  /*box-shadow: 1px 2px 1px rgba(0,0,0,0.9);*/
   transition: background-color 0.1s, box-shadow 0.2s;
 }
 .filled:hover {
   color: #36394a;
   border-color: #36394a;
   background-color: #91ee99;
+}
+.filled:active {
+  color: #211f36;
+  background-color: #b1ffcc;
+  box-shadow: 0px 0px 8px #000;
 }
 .outline:hover {
   color: #36394a;

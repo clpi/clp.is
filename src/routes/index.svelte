@@ -3,10 +3,25 @@
   import Input from '$components/Input.svelte';
   import Nav from '$components/Nav.svelte';
   import Menubar from '$components/Menubar.svelte';
+    import { onMount } from 'svelte';
+    let selected = "/";
 </script>
 
+<svelte:head>
+  <title>clp.is</title>
+  <script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2165595,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+</svelte:head>
 <div class="index">
-    <Nav/>
+  <Nav {selected}/>
     <div class="content">
       <h1>/index</h1>
       <h3>Welcome!</h3>
@@ -16,6 +31,12 @@
 </div>
 
 <style>
+  :global(body) {
+      background-color: #211f36;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+  }
   .index {
     overflow: hidden;
     background-color: #211f36;
@@ -51,11 +72,12 @@
     color: #cbe3e7;
   }
   .content {
-    background-color: rgba(255,255,255,0.07);
+    /* background-image: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,0.4)); */
+    background-color: rgba(255,255,255,0.08);
     padding: 10px 20px 40px 20px;
     border-radius: 10px;
     width: 85%;
-    max-width: 95%;
+    max-width: 90%;
     color: #cbe3e7;
     border: 1px solid #1a1a1a;
     border-top: 1px solid #91ffaa;
