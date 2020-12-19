@@ -12,8 +12,10 @@
   .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    width: 40px;
+    height: 20px;
   }
 
   .switch input {
@@ -29,7 +31,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #333;
+    background-color: rgba(255,255,255,0.06);
     box-shadow: 0px -1px 1px #000;
     border-bottom: 1px solid #555;
     -webkit-transition: .4s;
@@ -40,28 +42,24 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #1c1f23;
+    height: 14px;
+    width: 17px;
+    left: 3px;
+    bottom: 2px;
+    background-color: rgba(0,0,0,0.4);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
   }
 
   input:checked + .slider {
-    background-color: #ffca90;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #ffca90;
+    background-color: #99ffa9;
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
   }
 
 </style>

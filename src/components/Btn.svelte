@@ -12,13 +12,14 @@ button {
   border-radius: 3px;
   border: 1px solid #1c1f23;
   font-size: 0.9rem;
+  margin-top: 20px;
 }
 .filled {
 	background-color: #91ffaa;
   color: #1c1f23;
   border: 1px solid #1c1f23;
   text-shadow: none;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
   /* box-shadow: 0px 0px 8px #000; */
 }
 .raised {

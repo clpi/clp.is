@@ -1,6 +1,7 @@
 <script>
   import Link from './Link.svelte';
   import Btn from './Btn.svelte';
+    import Switch from './Switch.svelte';
   export let selected;
 </script>
 <nav>
@@ -22,7 +23,7 @@
       </a>
     </li>
     <li class="link left">
-      <a href="/projects" class:selected={selected=="projects"}>
+      <a href="/projects" class:selected={selected==="projects"}>
         projects
       </a>
     </li>
@@ -30,6 +31,9 @@
       <a href="http://github.com/clpi">
         github
       </a>
+    </li>
+    <li class="right">
+      <Switch/>
     </li>
   </div>
 </nav>
@@ -59,7 +63,8 @@
     border-bottom: 1px solid #91ffaa;
     border-radius: 3px;
     text-shadow: 2px 2px 2px #000;
-    transition: border-bottom 2s, text-shadow 1s;
+    /* transition: border-bottom 2s, text-shadow 1s; */
+    transition: 0.4s;
   }
   a:active {
     color: #a1ffca;

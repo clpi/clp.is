@@ -5,12 +5,10 @@
     export let selected = "contact";
 </script>
 
-<div class="contact">
-  <Nav {selected}/>
-    <div class="content">
-    <h1>contact me</h1>
-    <p>You can also reach me at clp at (this website's domain name</p>
-    <form name="contact" method="POST" data-netlify="true">
+  <h1>contact</h1>
+    <p>You can also reach me at clp at (this website's domain name)!</p>
+    <br/>
+    <form name="contact" data-netlify="true">
       <p>
       <label>Your Name:<br/><br/><input type="text" name="name" /></label>
       </p>
@@ -24,96 +22,35 @@
         <Btn type="submit" btn="filled">Send</Btn>
       </p>
     </form>
-  </div>
-</div>
 
 <style>
+  label {
+    font-size: 0.8em;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
   textarea {
     border-radius: 4px;
     border: 1px solid #91ffaa;
     padding: 5px 10px 5px 10px;
-    margin: 0.3vh 0.5vw 0.3vh 0.5vw;
     color: #91ffaa;
     max-width: 60%;
     width: 60%;
     height: 100px;
-    background: #211f36;
+    background: rgba(0,0,0,0.3);
     box-shadow: 0px 2px 1px #000;
   }
   input, textarea {
+    margin-top: 0px;
     border-radius: 5px;
     border: 1px solid transparent;
     border-bottom: 1px solid #91ffaa;
-    border-top: 1px solid rgba(0,0,0,0.6);
     padding: 10px 20px 10px 20px;
-    margin: 0.1vh 0.3vw 0.1vh 0.3vw;
     color: #91ffaa;
-    background: #211f36;
+    background: rgba(0,0,0,0.3);
     box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
   }
   input:active, textarea:active {
     border: 1px solid #fff;
   }
-  .contact {
-    overflow-x: hidden;
-    /* background-color: #282a2c; */
-    background-color: #211f36;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
-  }
-  h1 {
-    color: #cbe3e7;
-    padding: 10px 5px 10px 5px;
-    text-align: center;
-		text-transform: uppercase;
-		font-size: 3.5rem;
-		font-weight: 100;
-		line-height: 1.1;
-		margin: 2rem auto;
-		max-width: 14rem;
-  }
-  div {
-    display: block;
-    white-space: pre-line;
-    font-size: 1.1rem;
-    font-weight: 300;
-    text-shadow: 0.5px 1.5px 2.5px #000;
-    color: #cbe3e7;
-  }
-  .content {
-    background-color: rgba(255,255,255,0.07);
-    padding: 10px 20px 40px 20px;
-    border-radius: 6px;
-    width: 85%;
-    max-width: 95%;
-    color: #cbe3e7;
-    border: 1px solid #111;
-    border-top: 1px solid #91ffaa;
-    border-bottom: 2px solid #000;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-    margin: 3% auto 3% auto;
-    text-align: center;
-  }
-	:root {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	}
-
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			max-width: none;
-		}
-
-		p {
-			max-width: none;
-		}
-	}
 </style>
