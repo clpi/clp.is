@@ -7,9 +7,9 @@
 		"netlify": "svelte-kit build && svelte-kit adapt",
 		"static": "svelte-kit build && svelte-kit adapt",
 		"node": "svelte-kit build adapt node",
-    "anetlify": "svelte-kit adapt netlify",
-    "astatic": "svelte-kit adapt static",
-    "rollup": "rollup -c",
+		"anetlify": "svelte-kit adapt netlify",
+		"astatic": "svelte-kit adapt static",
+		"rollup": "rollup -c",
 		"start": "svelte-kit start",
 		"adapt": "svelte-kit adapt"
 	},
