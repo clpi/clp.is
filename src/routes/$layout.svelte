@@ -14,7 +14,7 @@
 
 <style>
   :global(body) {
-    background-color: #25243a;
+    background-color: #26253b;
       width: 100%;
       height: 100%;
       max-width: 100%;
@@ -32,7 +32,7 @@
     white-space: pre-line;
     font-size: 1.1rem;
     font-weight: 300;
-    text-shadow: 0.5px 1.5px 2.5px #000;
+    text-shadow: 0.5px 1.5px 2.5px rgba(0,0,0,0.5);
     color: #cbe3e7;
   }
   .content {
@@ -46,11 +46,9 @@
     border: 1px solid #1a1a1a;
     border-top: 1px solid #91ffaa;
     border-bottom: 2px solid #000000;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
     margin: 3% auto 3% auto;
     text-align: center;
-    /*border-bottom: 1px solid #fc9;*/
-    /*border-top: 2px solid #000;*/
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
   }
   .sidebar {
     display: block;
@@ -60,21 +58,25 @@
 	:root {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
-  :global(h1) {
+  :global(h1, h2, h3, h4, h5, h6) {
     color: #cbe3e7;
-    padding: 10px 5px 10px 5px;
     text-align: center;
-		text-transform: uppercase;
-		font-size: 3.5rem;
-		font-weight: 100;
 		line-height: 1.1;
 		margin: 2rem auto;
-		max-width: 14rem;
+  }
+  :global(h1) {
+		text-transform: uppercase;
+    padding: 10px 5px 10px 5px;
+		font-size: 3.5rem;
+		font-weight: 100;
+    text-shadow: 0.5px 1.5px 2.5px rgba(0,0,0,0.7);
   }
   :global(h3) {
+
     font-size: 1.9rem;
 		font-weight: 300;
 		line-height: 1.1;
+    text-shadow: 0.5px 1.5px 2.5px rgba(0,0,0,0.7);
 
   }
 </style>

@@ -5,23 +5,27 @@
     export let selected = "contact";
 </script>
 
-  <h1>contact</h1>
-    <p>You can also reach me at clp at (this website's domain name)!</p>
-    <br/>
-    <form name="contact" data-netlify="true">
-      <p>
-      <label>Your Name:<br/><br/><input type="text" name="name" /></label>
-      </p>
-      <p>
-      <label>Your Email:<br/><br/> <input type="email" name="email" /></label>
-      </p>
-      <p>
-      <label>Message:<br/><br/> <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <Btn type="submit" btn="filled">Send</Btn>
-      </p>
-    </form>
+<svelte:head>
+  <title>Contact • clp.is</title>
+</svelte:head>
+
+<h1>contact</h1>
+<p>You can also reach me at clp at (this website's domain name)!</p>
+<br/>
+<form name="contact" data-netlify="true">
+  <p>
+  <label>Your Name:<br/><br/><input type="text" name="name" /></label>
+  </p>
+  <p>
+  <label>Your Email:<br/><br/> <input type="email" name="email" /></label>
+  </p>
+  <p>
+  <label>Message:<br/><br/> <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <Btn type="submit" btn="filled">Send</Btn>
+  </p>
+</form>
 
 <style>
   label {

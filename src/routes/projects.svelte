@@ -5,6 +5,10 @@
   /* import Menubar from '$components/Menubar.svelte'; */
 </script>
 
+<svelte:head>
+  <title>Projects • clp.is</title>
+</svelte:head>
+
 <div class="projects">
     <div class="content">
     <h1>projects</h1>

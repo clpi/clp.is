@@ -7,9 +7,9 @@
 </script>
 
 <svelte:head>
-  <title>About - clp.is</title>
+  <title>About • clp.is</title>
 </svelte:head>
 
-    <h1>about</h1>
-    <p>Website currently under construction!</p>
-    <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
+<h1>about</h1>
+<p>Website currently under construction!</p>
+<a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
