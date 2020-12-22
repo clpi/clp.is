@@ -22,6 +22,7 @@
 <a href="/">Back to blog</a>
 <h1>{post.title}</h1>
 
+
 <div class='content'>
   {@html post.html}
 </div>

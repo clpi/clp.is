@@ -1,41 +1,30 @@
 <script>
   import Link from './Link.svelte';
   import Btn from './Btn.svelte';
-    import Switch from './Switch.svelte';
+  import Switch from './Switch.svelte';
+    let links = [
+        ["home", "/"],
+        ["about", "/about"],
+        ["contact", "/contact"],
+        ["projects", "/projects"],
+        ["blog", "/blog"],
+        ["github", "https://github.com/clpi"]
+      ];
   export let selected;
 </script>
 <nav>
 <ul>
-  <div class="left">
+  {#each links as link}
     <li class="link left">
-      <a href="/" class:selected={selected==="/"}>
-        home
+      <a href={link[1]} class:selected={selected==link[1]}>
+        {link[0]}
       </a>
     </li>
-    <li class="link left">
-      <a href="/about" class:selected={selected==="about"}>
-        about
-      </a>
-    </li>
-    <li class="link left">
-      <a href="/contact" class:selected={selected=="contact"}>
-        contact
-      </a>
-    </li>
-    <li class="link left">
-      <a href="/projects" class:selected={selected==="projects"}>
-        projects
-      </a>
-    </li>
-    <li class="link right">
-      <a href="http://github.com/clpi">
-        github
-      </a>
-    </li>
-    <li class="right">
-      <Switch/>
-    </li>
-  </div>
+  {/each}
+  <li>
+    <Switch/>
+  </li>
+</ul>
 </nav>
 <style>
   .left {
@@ -70,26 +59,29 @@
     color: #a1ffca;
   }
 ul {
-  /*justify-content: center;*/
   display: inline-block;
   margin: 0 auto;
   list-style: none;
   padding-right: 5vw;
   vertical-align: center;
-  /* margin: 0vh 5vw 0vh 5vw; */
+  padding-inline-start: unset;
 }
   ul::after {
     content: '';
     display: block;
     clear: both;
   }
-  .active {
-    background-color: #91ffaa;
+  .selected {
+    /* background-color: #91ffaa; */
+    /* transition: 0.3s ease-in-out; */
   }
   nav {
+    display: flex;
+    justify-content: center;
     background-color: rgba(0,0,0,0.15);
     font-size: 1.1rem;
     font-weight: 300;
+    width: 90%;
     overflow: hidden;
     text-align: center;
     width: 100%;

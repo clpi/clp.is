@@ -3,7 +3,9 @@
   export let selected = "/";
 </script>
 
-<Nav {selected}/>
+<div class="head">
+  <Nav {selected}/>
+</div>
 <div clas="body">
   <div class="content">
     <slot></slot>
@@ -15,16 +17,11 @@
     background-color: #25243a;
       width: 100%;
       height: 100%;
+      max-width: 100%;
+      max-height: 100%;
       margin: 0 auto;
-  }
-  .body {
-    overflow: hidden;
-    background-color: #211f37;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
   }
   :global(a) {
     color: #91ffaa;
