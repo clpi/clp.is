@@ -35,7 +35,8 @@
     border-bottom: 1px ,solid #81ee99;
   }
   a {
-    color: #91ffaa;
+    color: rgba(150,255,170,1);
+    /* color: #91ffaa; */
     text-decoration: none;
     padding: 10px 8px 10px 8px;
     margin-top: 10px;

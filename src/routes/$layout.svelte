@@ -24,7 +24,7 @@
       overflow-y: auto;
   }
   :global(a) {
-    color: #91ffaa;
+    color: rgba(150,255,170,1);
     text-decoration: none;
   }
   div {
