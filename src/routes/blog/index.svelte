@@ -1,4 +1,8 @@
-<h1>Blog</h1>
+<script context="module">
 
-<h3>Blog posts:</h3>
+</script>
+<script>
+
+</script>
+<h3>Blog</h3>
 <p><em>Nothing here yet! Under construction</em></p>

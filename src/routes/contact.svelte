@@ -9,7 +9,7 @@
   <title>Contact • clp.is</title>
 </svelte:head>
 
-<h1>contact</h1>
+<h3>contact</h3>
 <p>You can also reach me at clp at (this website's domain name)!</p>
 <br/>
 <form name="contact" data-netlify="true">

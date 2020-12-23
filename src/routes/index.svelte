@@ -22,8 +22,7 @@
 </svelte:head>
 <div class="index">
     <div class="content">
-      <h1>~/</h1>
-      <h3>Welcome!</h3>
+      <h3>hi there!</h3>
       <p>Website currently under construction!</p>
       <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
   </div>

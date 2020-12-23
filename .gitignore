@@ -3,6 +3,6 @@ node_modules
 /.svelte
 /functions
 **target/
-/build
+**build
 # Local Netlify folder
 .netlify

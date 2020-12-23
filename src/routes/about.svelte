@@ -10,6 +10,6 @@
   <title>About • clp.is</title>
 </svelte:head>
 
-<h1>about</h1>
+<h3>about</h3>
 <p>Website currently under construction!</p>
 <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>

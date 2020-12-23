@@ -11,7 +11,7 @@
 
 <div class="projects">
     <div class="content">
-    <h1>projects</h1>
+    <h3>projects</h3>
     <p>Website currently under construction!</p>
     <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
   </div>
