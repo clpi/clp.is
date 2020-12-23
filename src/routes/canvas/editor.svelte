@@ -1,12 +1,21 @@
 <script>
   import Btn from '$components/Btn.svelte';
+  import { createEventDispatcher } from 'svelte';
   import Hero from '$components/Hero.svelte';
+  /* const dispatch = createEventDispatcher(); */
   let input = "";
   let output = "";
   export function updateOutput()
   {
     output = input;
-    return output;
+    /* return output; */
+  }
+  export function submit() {
+    /* dispatch('parse', input); */
+  }
+  export function save() {
+    /* dispatch('parse', input); */
+
   }
 </script>
 <svelte:head>
@@ -24,7 +33,10 @@
     <p class="head"><span class="green">output</span> column.</p>
   </div>
   <div class="input col">
-    <textarea bind:value={input} on:input={updateOutput}></textarea>
+    <textarea
+       bind:value={input}
+       on:input={updateOutput}
+      />
   </div>
   <div class="output col">
     <div class="out">{output}</div>
@@ -37,7 +49,8 @@
     <Btn btn="filled">Refresh</Btn>
   </div>
   <div class="input col">
-    <Btn btn="filled" type="submit">Submit</Btn>
+    <Btn btn="filled"  on:click={save}>save</Btn>
+    <Btn btn="filled" type="submit" on:click={submit}>Submit</Btn>
   </div>
 </div>
 </form>

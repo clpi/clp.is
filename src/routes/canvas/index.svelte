@@ -13,6 +13,11 @@
       wasm
     </li>
   </a>
+  <a href="/canvas/shell">
+    <li>
+      shell
+    </li>
+  </a>
 </ul>
 <style>
   ul {

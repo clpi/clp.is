@@ -1,3 +1,15 @@
+<script context="module">
+  document.querySelector('exec')
+  .addEventListener('click', () => {
+    alert('output in console');
+    var res = WebAssembly.Module.ccall(
+      'myFunction',
+      null,
+      null,
+      null
+    );
+  });
+</script>
 <svelte:head>
   <title>wasm • clp.is</title>
 </svelte:head>

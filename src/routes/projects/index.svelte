@@ -1,8 +1,5 @@
 <script>
   import Btn from '$components/Btn.svelte';
-  import Input from '$components/Input.svelte';
-  import Nav from '$components/Nav.svelte';
-  /* import Menubar from '$components/Menubar.svelte'; */
 </script>
 
 <svelte:head>
@@ -19,7 +16,7 @@
       canvas
     </div>
     </a>
-    <a href="/editor">
+    <a href="/canvas/editor">
     <div class="col">
       editor
     </div>
@@ -57,7 +54,7 @@
     margin-left: 6%;
     margin-right: 6%;
     float: left;
-    background-image: linear-gradient(rgba(255,255,255,0.0),rgba(0,0,0,0.055));
+    background-image: linear-gradient(rgba(255,255,255,0.0),rgba(0,0,0,0.1));
     border-top: 1px solid #91ffaa;
     padding-top: 20px;
     padding-bottom: 20px;
