@@ -1,6 +1,18 @@
+<svelte:head>
+  <title>Canvas • clp.is</title>
+</svelte:head>
 <h3>canvas</h3>
 <ul>
-  <li><a href="/editor">editor</a></li>
+  <a href="/canvas/editor">
+    <li>
+      editor
+    </li>
+  </a>
+  <a href="/canvas/wasm">
+    <li>
+      wasm
+    </li>
+  </a>
 </ul>
 <style>
   ul {

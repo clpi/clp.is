@@ -1,3 +1,6 @@
+<script>
+  import Switch from './Switch.svelte';
+</script>
 <footer>
   <div class="left">
     <ul>
@@ -11,6 +14,7 @@
   </div>
   <div class="right">
     <ul>
+      <li><Switch/></li>
       <li>2020 chris p :)</li>
     </ul>
   </div>
@@ -66,5 +70,6 @@
   li {
     float: left;
     padding-right: 40px;
+    vertical-align: center;
   }
 </style>

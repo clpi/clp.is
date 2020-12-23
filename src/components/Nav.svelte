@@ -1,7 +1,6 @@
 <script>
   import Link from './Link.svelte';
   import Btn from './Btn.svelte';
-  import Switch from './Switch.svelte';
     let links = [
         ["home", "/"],
         ["about", "/about"],
@@ -13,16 +12,37 @@
 </script>
 <nav>
 <ul>
-  {#each links as link}
-    <li class="link left">
-      <a href={link[1]} class:selected={selected==link[1]}>
-        {link[0]}
-      </a>
-    </li>
-  {/each}
   <li>
-    <Switch/>
+    <a href="/" class="title">
+      clp<span class="h2">.is</span>
+    </a>
   </li>
+  <li></li>
+  <a href="/" class:selected={selected==="/"}>
+    <li class="link left">
+      home
+    </li>
+  </a>
+  <a href="/about" class:selected={selected==="/about"}>
+    <li class="link left">
+      about
+    </li>
+  </a>
+  <a href="/contact" class:selected={selected==="/contact"}>
+    <li class="link left">
+      contact
+    </li>
+  </a>
+  <a href="/projects" class:selected={selected==="/projects"}>
+    <li class="link left">
+      projects
+    </li>
+  </a>
+  <a href="/blog" class:selected={selected==="/blog"}>
+    <li class="link left">
+      blog
+    </li>
+  </a>
 </ul>
 </nav>
 <style>
@@ -37,10 +57,11 @@
     color: rgba(150,255,170,1);
     /* color: #91ffaa; */
     text-decoration: none;
-    padding: 10px 8px 10px 8px;
+    padding: 15px 2px 15px 2px;
     margin-top: 10px;
     display: inline-block;
     font-size: 1.1rem;
+    border-bottom: 1px solid transparent;
   }
   li {
     vertical-align: center;
@@ -50,7 +71,7 @@
   a:hover {
     color: #71dd99;
     border-bottom: 1px solid #91ffaa;
-    border-radius: 3px;
+    border-radius: 2px;
     text-shadow: 2px 2px 2px #000;
     /* transition: border-bottom 2s, text-shadow 1s; */
     transition: 0.4s;
@@ -98,5 +119,14 @@
     height: 60px;
     vertical-align: center;
 
+  }
+  .title {
+    color: #91ffaa;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .h2 {
+    font-weight: 300;
+    color: #cbe3e7;
   }
 </style>

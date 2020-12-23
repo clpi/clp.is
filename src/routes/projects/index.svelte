@@ -53,14 +53,17 @@
     display: table;
   }
   .col {
-    width: 48%;
+    width: 38%;
+    margin-left: 6%;
+    margin-right: 6%;
     float: left;
     background-image: linear-gradient(rgba(255,255,255,0.0),rgba(0,0,0,0.055));
     border-top: 1px solid #91ffaa;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
+    /* margin-left: 1%; */
+    /* margin-right: 1%; */
+    margin-bottom: 1%;
     border-radius: 2px;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
   }

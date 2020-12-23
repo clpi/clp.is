@@ -12,8 +12,6 @@
   .switch {
     position: relative;
     display: inline-block;
-    margin-top: 50%;
-    margin-bottom: 50%;
     width: 40px;
     height: 20px;
   }
