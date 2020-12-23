@@ -3,10 +3,7 @@
   export const sub = "home";
   export const heroVisible = true;
   import Btn from '$components/Btn.svelte';
-  import Hero from '$components/Hero.svelte';
-  import Menubar from '$components/Menubar.svelte';
-    import { onMount } from 'svelte';
-    let selected = "/";
+  let selected = "/";
 </script>
 
 <svelte:head>
@@ -27,6 +24,7 @@
       <h3>hi there!</h3>
       <p>Website currently under construction!</p>
       <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
+        <br/><br/>
   </div>
 </div>
 
