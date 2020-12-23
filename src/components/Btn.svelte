@@ -19,7 +19,7 @@ button {
   color: #1c1f23;
   border: 1px solid #1c1f23;
   text-shadow: none;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
   /* box-shadow: 0px 0px 8px #000; */
 }
 .raised {
@@ -88,7 +88,8 @@ button:hover {
 .filled:hover {
   color: #36394a;
   border-color: #36394a;
-  background-color: #91ee99;
+  /* background-color: #91ee99; */
+  background-image: linear-gradient(rgba(150,255,170,0.9), rgba(150,255,170,0.7));
 }
 .filled:active {
   color: #211f36;
