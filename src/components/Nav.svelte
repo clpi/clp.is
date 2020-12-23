@@ -8,7 +8,6 @@
         ["contact", "/contact"],
         ["projects", "/projects"],
         ["blog", "/blog"],
-        ["github", "https://github.com/clpi"]
       ];
   export let selected;
 </script>
@@ -60,15 +59,15 @@
   a:active {
     color: #a1ffca;
   }
-ul {
-  display: inline-block;
-  margin: 0 auto;
-  list-style: none;
-  padding-right: 5vw;
-  vertical-align: center;
-  padding-inline-start: unset;
-  height: 100%;
-}
+  ul {
+    display: inline-block;
+    margin: 0 auto;
+    list-style: none;
+    padding-right: 5vw;
+    vertical-align: center;
+    padding-inline-start: unset;
+    height: 100%;
+  }
   ul::after {
     content: '';
     display: block;
@@ -81,7 +80,7 @@ ul {
   nav {
     display: flex;
     justify-content: center;
-    background-color: rgba(0,0,0,0.17);
+    background-image: linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.21));
     font-size: 1.1rem;
     font-weight: 300;
     width: 90%;
@@ -93,8 +92,8 @@ ul {
     padding: 0vh 0vw 2.5vh 0vw;
     max-height: 40px;
     margin: 0;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
     color: #91ffaa;
     height: 60px;
     vertical-align: center;

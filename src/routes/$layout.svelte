@@ -1,18 +1,25 @@
 <script>
   import Nav from '$components/Nav.svelte';
+  import Footer from '$components/Footer.svelte';
   export let selected = "/";
 </script>
 
-<div class="head">
+<div class="body">
   <Nav {selected}/>
-</div>
-<div clas="body">
   <div class="content">
     <slot></slot>
   </div>
 </div>
+  <Footer/>
 
 <style>
+  .body {
+    /* margin-bottom: -100px; */
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    /* min-height: calc(100vh); */
+  }
   :global(body) {
     background-color: #26253b;
       width: 100%;
