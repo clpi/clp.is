@@ -72,7 +72,6 @@
 		margin: 2rem auto;
   }
   :global(h1) {
-		text-transform: uppercase;
     padding: 10px 5px 10px 5px;
 		font-size: 3.5rem;
 		font-weight: 100;
@@ -80,8 +79,8 @@
   }
   :global(h3) {
 
-    font-size: 1.9rem;
-		font-weight: 300;
+    font-size: 2.8rem;
+		font-weight: 100;
 		line-height: 1.1;
     text-shadow: 0.5px 1.5px 2.5px rgba(0,0,0,0.7);
 
