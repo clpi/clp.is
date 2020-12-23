@@ -1,7 +1,9 @@
 <script>
+  export const title = "clp.is";
+  export const sub = "home";
+  export const heroVisible = true;
   import Btn from '$components/Btn.svelte';
-  import Input from '$components/Input.svelte';
-  import Nav from '$components/Nav.svelte';
+  import Hero from '$components/Hero.svelte';
   import Menubar from '$components/Menubar.svelte';
     import { onMount } from 'svelte';
     let selected = "/";

@@ -92,7 +92,7 @@
     padding: 0vh 0vw 2.5vh 0vw;
     max-height: 40px;
     margin: 0;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.13);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid rgba(0,0,0,0.25);
     color: #91ffaa;
     height: 60px;

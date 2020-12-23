@@ -1,14 +1,17 @@
 <script>
   import Nav from '$components/Nav.svelte';
+  import Hero from '$components/Hero.svelte';
+  import Content from '$components/Content.svelte';
   import Footer from '$components/Footer.svelte';
   export let selected = "/";
 </script>
 
 <div class="body">
   <Nav {selected}/>
-  <div class="content">
+  <!--<Hero title="clp.is">hello</Hero>-->
+  <Content>
     <slot></slot>
-  </div>
+  </Content>
 </div>
   <Footer/>
 
@@ -22,6 +25,8 @@
   }
   :global(body) {
     background-color: #26253b;
+    background-color: #27263c;
+    /* background-color: #efefef; */
       width: 100%;
       height: 100%;
       max-width: 100%;
@@ -29,6 +34,7 @@
       margin: 0 auto;
       overflow-x: hidden;
       overflow-y: auto;
+      font-size: 1.2rem;
   }
   :global(a) {
     color: rgba(150,255,170,1);
@@ -41,21 +47,6 @@
     font-weight: 300;
     text-shadow: 0.5px 1.5px 2.5px rgba(0,0,0,0.5);
     color: #cbe3e7;
-  }
-  .content {
-    /* background-image: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,0.4)); */
-    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.06));
-    padding: 10px 20px 40px 20px;
-    border-radius: 10px;
-    width: 85%;
-    max-width: 90%;
-    color: #cbe3e7;
-    border: 1px solid #1a1a1a;
-    border-top: 1px solid #91ffaa;
-    border-bottom: 2px solid #000000;
-    margin: 3% auto 3% auto;
-    text-align: center;
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
   }
   .sidebar {
     display: block;
