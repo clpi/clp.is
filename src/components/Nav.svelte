@@ -1,6 +1,7 @@
+<script context="module">
+    export let selected;
+</script>
 <script>
-  import Link from './Link.svelte';
-  import Btn from './Btn.svelte';
     let links = [
         ["home", "/"],
         ["about", "/about"],
@@ -8,7 +9,7 @@
         ["projects", "/projects"],
         ["blog", "/blog"],
       ];
-  export let selected;
+
 </script>
 <nav>
 <ul>
@@ -57,8 +58,9 @@
     color: rgba(150,255,170,1);
     /* color: #91ffaa; */
     text-decoration: none;
-    padding: 15px 2px 15px 2px;
-    margin-top: 10px;
+    padding: 20px 0px 20px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: inline-block;
     font-size: 1.1rem;
     border-bottom: 1px solid transparent;
@@ -70,15 +72,24 @@
   }
   a:hover {
     color: #71dd99;
-    border-bottom: 1px solid #91ffaa;
-    border-radius: 2px;
+    border-bottom: 1px solid rgba(150,255,170,0.8);
+    border-radius: 3px;
+    /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(150,255,170,0.03)); */
     text-shadow: 2px 2px 2px #000;
-    /* transition: border-bottom 2s, text-shadow 1s; */
-    transition: 0.4s;
-    /* background: rgba(0,0,0,0.1); */
+    transition: 0.4s ease-in-out;
   }
   a:active {
     color: #a1ffca;
+  }
+  .selected {
+
+  }
+  a.selected {
+    /* background-color: rgba(0,0,0,0.2); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.0), rgba(150,255,170,0.1)); */
+    border-bottom: 1px ridge #91ffaa;
+    /* box-shadow: 0px 0px 3px rgba(0,0,0,0.4); */
+    border-radius: 3px;
   }
   ul {
     display: inline-block;
@@ -111,22 +122,35 @@
     min-width: 100vw;
     /* height: 4vh; */
     padding: 0vh 0vw 2.5vh 0vw;
-    max-height: 40px;
+    max-height: 42px;
     margin: 0;
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid rgba(0,0,0,0.25);
     color: #91ffaa;
-    height: 60px;
+    height: 61px;
     vertical-align: center;
 
   }
   .title {
     color: #91ffaa;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 600;
   }
   .h2 {
     font-weight: 300;
     color: #cbe3e7;
+    opacity: 0.7;
   }
+
+  @media screen and (max-width: 500px) {
+    a li {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .title {
+      float: none;
+    }
+  }
+
 </style>

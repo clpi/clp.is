@@ -1,5 +1,11 @@
 <script>
   import Switch from './Switch.svelte';
+  export function toggleLight() {
+    let body = document.body;
+    let content = document.getElementsByClassName("content");
+    body.classList.toggle("lightb")
+    content.classList.toggle("light");
+  }
 </script>
 <footer>
   <div class="left">
@@ -14,7 +20,8 @@
   </div>
   <div class="right">
     <ul>
-      <li><Switch/></li>
+      <li><Switch
+            on:toggled={toggleLight}/></li>
       <li>2020 chris p :)</li>
     </ul>
   </div>
@@ -71,5 +78,13 @@
     float: left;
     padding-right: 40px;
     vertical-align: center;
+  }
+  :global(.light) {
+    background-color: #fff;
+    color: #1e1c31;
+  }
+  :global(.lightb) {
+    background-color: #eee;
+    color: #1e1c31;
   }
 </style>
