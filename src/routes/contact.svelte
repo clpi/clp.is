@@ -1,7 +1,6 @@
 <script>
   import Btn from '$components/Btn.svelte';
-  import Input from '$components/Input.svelte';
-  import Nav from '$components/Nav.svelte';
+  import Content from '$components/Content.svelte';
     export let selected = "contact";
 </script>
 
@@ -9,6 +8,7 @@
   <title>Contact • clp.is</title>
 </svelte:head>
 
+<Content>
 <h3>contact</h3>
 <p>You can also reach me at clp at (this website's domain name)!</p>
 <br/>
@@ -26,6 +26,7 @@
     <Btn type="submit" btn="filled">Send</Btn>
   </p>
 </form>
+</Content>
 
 <style>
   label {

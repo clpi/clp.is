@@ -1,7 +1,9 @@
 <script>
+  import Content from '$components/Content.svelte';
   export const title = "clp.is";
   export const sub = "home";
   export const heroVisible = true;
+  import Hero from '$components/Hero.svelte';
   import Btn from '$components/Btn.svelte';
   let selected = "/";
 </script>
@@ -19,6 +21,8 @@
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
 </svelte:head>
+<Hero/>
+<Content>
 <div class="index">
     <div class="content">
       <h3>hi there!</h3>
@@ -27,6 +31,7 @@
         <br/><br/>
   </div>
 </div>
+</Content>
 
 <style>
 </style>

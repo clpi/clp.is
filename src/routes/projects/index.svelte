@@ -1,12 +1,14 @@
 <script>
   import Btn from '$components/Btn.svelte';
   import Hero from '$components/Hero.svelte';
+  import Content from '$components/Content.svelte';
 </script>
 
 <svelte:head>
   <title>Projects • clp.is</title>
 </svelte:head>
 
+<Content>
 <div class="projects" slot:title="content">
   <div class="content">
     <h3>projects</h3>
@@ -40,6 +42,7 @@
     <a href="/contact"><Btn btn="filled">Contact me!</Btn></a>
   </div>
 </div>
+</Content>
 
 <style>
   .row {

@@ -1,8 +1,5 @@
 <script>
   import Nav from '$components/Nav.svelte';
-  import Flair from '$components/LightFlair.svelte';
-  import Hero from '$components/Hero.svelte';
-  import Content from '$components/Content.svelte';
   import Footer from '$components/Footer.svelte';
   import { fade } from 'svelte/transition';
   export let selected = "/";
@@ -18,13 +15,8 @@
 
 <div class="body" transition:fade>
   <Nav {selected}/>
-  <Hero bind:title={title}>
-    <slot name="hero" {title}>clp.is</slot>
-    </Hero>
     <br/>
-  <Content transition>
-    <slot></slot>
-  </Content>
+  <slot></slot>
 </div>
 <Footer/>
 
