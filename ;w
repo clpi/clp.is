@@ -1,13 +1,12 @@
 <script>
   import Btn from '$components/Btn.svelte';
-  import Hero from '$components/Hero.svelte';
 </script>
 
 <svelte:head>
   <title>Projects • clp.is</title>
 </svelte:head>
 
-<div class="projects" slot:title="content">
+<div class="projects">
   <div class="content">
     <h3>projects</h3>
   </div>
@@ -55,11 +54,10 @@
     margin-left: 6%;
     margin-right: 6%;
     float: left;
-    /*background-image: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.0));*/
-    background: rgba(255,255,255,0.06);
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.0));
     border-top: 1px inset #91ffaa;
     border-bottom: 1px inset #111;
-    border-radius: 2px;
+    border-radius: 8px;
     padding-top: 20px;
     padding-bottom: 20px;
     /* margin-left: 1%; */

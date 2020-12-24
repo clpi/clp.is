@@ -1,19 +1,32 @@
 <script>
   import Nav from '$components/Nav.svelte';
+  import Flair from '$components/LightFlair.svelte';
   import Hero from '$components/Hero.svelte';
   import Content from '$components/Content.svelte';
   import Footer from '$components/Footer.svelte';
+  import { fade } from 'svelte/transition';
   export let selected = "/";
-</script>
+  export let title = "home";
+    function handleClick() {
 
-<div class="body">
+      }
+    function handleScroll() {
+
+      }
+</script>
+<svelte:window on:click={handleClick} on:scroll={handleScroll}/>
+
+<div class="body" transition:fade>
   <Nav {selected}/>
-  <!--<Hero title="clp.is">hello</Hero>-->
-  <Content>
+  <Hero bind:title={title}>
+    <slot name="hero" {title}>clp.is</slot>
+    </Hero>
+    <br/>
+  <Content transition>
     <slot></slot>
   </Content>
 </div>
-  <Footer/>
+<Footer/>
 
 <style>
   .body {

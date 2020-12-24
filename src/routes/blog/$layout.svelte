@@ -2,6 +2,7 @@
 
 
 <div class="content">
+  <link rel="stylesheet" href="https://files.stork-search.net/dark.css" />
   <slot></slot>
 </div>
 

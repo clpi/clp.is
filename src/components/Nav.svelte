@@ -152,5 +152,9 @@
       float: none;
     }
   }
+  nav:hover {
+    border-bottom: 1px solid rgba(150,255,170,0.2);
+    transition: 1s;
+  }
 
 </style>
