@@ -33,6 +33,8 @@
   }
   a:hover {
     color: rgba(150,255,170,1);
+    border-bottom: 1px inset rgba(150,255,170,1);
+    border-radius: 2px;
   }
   footer {
     height: 100px;
