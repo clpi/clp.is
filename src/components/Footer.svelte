@@ -15,8 +15,8 @@
       <li><a href="https://gitlab.com/clpi">gitlab</a></li>
       <li><a href="https://linkedin.com">linkedin</a></li>
       <li><a href="#">twitter</a></li>
-      <li><a href="http://rateyourmusic.com/user/ooohm">rym</a></li>
-      <li><a href="http://last.fm/user/ooohm">last.fm</a></li>
+      <li><a href="http://rateyourmusic.com/user/ooohm" class="fun">rym</a></li>
+      <li><a href="http://last.fm/user/ooohm" class="fun">last.fm</a></li>
   </div>
   <div class="right">
     <ul>
@@ -70,6 +70,7 @@
   }
   .left { float: left; }
   .right { float: right; }
+  .fun { color: rgb(255,255,170); }
   ul {
     margin: 0 auto;
     list-style: none;

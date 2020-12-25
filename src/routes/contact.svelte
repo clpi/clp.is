@@ -14,12 +14,15 @@
 <br/>
 <form name="contact" data-netlify="true">
   <p>
-  <label>Your Name:<br/><br/><input type="text" name="name" /></label>
+  <label>Your name:&nbsp;&nbsp;&nbsp;<input type="text" name="name" /></label>
   </p>
   <p>
-  <label>Your Email:<br/><br/> <input type="email" name="email" /></label>
+  <label>Your email:&nbsp;&nbsp;&nbsp;<input type="email" name="email" /></label>
   </p>
   <p>
+  <label>Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" /></label>
+  </p>
+  <p><br/>
   <label>Message:<br/><br/> <textarea name="message"></textarea></label>
   </p>
   <p>
@@ -55,8 +58,10 @@
     border-top: 1px solid rgba(0,0,0,0.4);
     padding: 15px 20px 15px 20px;
     color: #91ffaa;
-    background: rgba(0,0,0,0.3);
-    box-shadow: 0px -1px 1px rgba(0,0,0,0.3);
+    /* background: rgba(0,0,0,0.3); */
+    background: #201e36;
+    background: #222039;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.3);
   }
   input:active, textarea:active {
     border: 1px solid #fff;

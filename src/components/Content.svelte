@@ -1,4 +1,7 @@
-<div class="content">
+<script>
+  export let color = "green";
+</script>
+<div class="content {color}">
   <slot></slot>
 </div>
 <style>
@@ -12,11 +15,16 @@
     width: 80%;
     max-width: 90%;
     color: #cbe3e7;
-    border-top: 1px solid #91ffaa;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
     margin: 3% auto 3% auto;
     text-align: center;
     box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  }
+  .green {
+    border-top: 1px solid #91ffaa;
+  }
+  .blue {
+    border-top: 1px solid rgba(170,255,255,1);
   }
   .content:hover {
     background-image: linear-gradient(rgba(255,255,255,0.13), rgba(255,255,255,0.06));

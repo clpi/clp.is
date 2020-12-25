@@ -15,7 +15,7 @@
 <ul>
   <li>
     <a href="/" class="title">
-      clp<span class="h2">.is</span>
+      clp<span class="h2">.is</span>&nbsp;_
     </a>
   </li>
   <li></li>
@@ -133,6 +133,7 @@
   }
   .title {
     color: #91ffaa;
+    color: rgba(255,255,170, 1);
     font-size: 1.1rem;
     font-weight: 600;
   }

@@ -14,10 +14,10 @@
     <em><p>hello</p></em>
   </div>
   <div class="sub">
-    <p><span style="color: #91ffaa">&</span></p>
+    <p><span style="color: rgb(255,255,170); text-shadow: 1px 2px 2px rgba(0,0,0,0.2); font-weight: 300">&</span></p>
   </div>
   <div class="title">
-    <h1>welcome<span style="color: #91ffaa; font-size: 2.8rem;">,</span></h1>
+    <h1>welcome<span style="color: rgb(255,255,170); font-size: 2.8rem; text-shadow: 1px 2px 2px rgba(0,0,0,0.3); font-weight: 300">,</span></h1>
   </div>
   <div class="sub">
     <p>partner!</p>
@@ -25,37 +25,38 @@
 </hero>
 <style>
   hero {
-    margin-top: 0;
     display: inline-block;
-    background-image: linear-gradient(rgba(150,255,170, 0.5), rgba(155,255,170, 0.35));
+    background-image: linear-gradient(rgba(150,255,170, 0.8), rgba(255,255,170, 0.7));
     /* background-image: linear-gradient(rgba(255,255,255, 0.01), rgba(0,0,0, 0.20)); */
      /* background-image: linear-gradient(rgba(150,255,170, 0.02), rgba(0,0,0, 0.20)); */
     font-size: 1.1rem;
     font-weight: 300;
     width: 100%;
     min-height: 200px;
+    max-height: 200px;
     padding: 0vh 0vw 0vh 0vw;
     margin: 0;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.20);
     border-bottom: 1px solid rgba(0,0,0,1);
     color: #91ffaa;
-    height: 40px;
-    padding-left: 28%;
+    padding-left: 23%;
   }
   h1 {
-    color: #1e1c31;
     color: #cbe3e7;
-    text-shadow: 1px 1px 2px #111;
+    color: #2e2c41;
+    margin-top: 11%;
+    text-shadow: 1px 1px 2px transparent;
     text-align: left;
     /* text-shadow: none; */
-    font-size: 3.9rem;
+    font-size: 5.1rem;
   }
   p {
     text-shadow: none;
     color: #cbe3e7;
-    text-shadow: 1px 1px 2px #111;
-    font-size: 2.1rem;
-    font-weight: 250;
+    color: rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 2px transparent;
+    font-size: 2.3rem;
+    font-weight: 200;
   }
   div {
     display: inline-block;
