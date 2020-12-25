@@ -34,10 +34,10 @@
     padding-top: 0px;
     margin-top: 0px;
   }
+  p { line-height: 15px; text-shadow: 1.5px 2px 3px rgba(0,0,0,0.9);}
   textarea {
     border-radius: 4px;
     border: 1px solid #91ffaa;
-    padding: 5px 10px 5px 10px;
     color: #91ffaa;
     max-width: 60%;
     width: 60%;
@@ -45,15 +45,18 @@
     background: rgba(0,0,0,0.3);
     box-shadow: 0px 2px 1px #000;
   }
+  label { margin: 0; padding: 0; }
   input, textarea {
     margin-top: 0px;
-    border-radius: 5px;
+    margin-bottom: 0px;
+    border-radius: 3px;
     border: 1px solid transparent;
-    border-bottom: 1px solid #91ffaa;
-    padding: 10px 20px 10px 20px;
+    border-bottom: 1px inset rgba(150,255,170,0.8);
+    border-top: 1px solid rgba(0,0,0,0.4);
+    padding: 15px 20px 15px 20px;
     color: #91ffaa;
     background: rgba(0,0,0,0.3);
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    box-shadow: 0px -1px 1px rgba(0,0,0,0.3);
   }
   input:active, textarea:active {
     border: 1px solid #fff;
