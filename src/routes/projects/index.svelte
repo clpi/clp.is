@@ -13,6 +13,19 @@
   <div class="content">
     <h3>projects</h3>
   </div>
+  <p>projects forthcoming, for now here are some convenience links</p>
+  <div class="row">
+    <a href="https://github.com/clpi/dotfiles">
+    <div class="col">
+      dotfiles
+    </div>
+    </a>
+    <a href="http://clp.is/wasm">
+    <div class="col">
+      dlog
+    </div>
+    </a>
+  </div>
   <p>(these aren't projects, just little sandboxes i'm playing with from time to time)</p>
   <div class="row">
     <a href="/canvas">
@@ -47,7 +60,8 @@
 
 <style>
   .row {
-    margin-top: 20px;
+    margin: 15px auto;
+    width: 80%;
   }
   .row:after {
     content: "";
@@ -55,15 +69,15 @@
     display: table;
   }
   .col {
-    width: 38%;
-    margin-left: 6%;
-    margin-right: 6%;
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
     float: left;
     /*background-image: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.0));*/
     background: rgba(255,255,255,0.06);
     border-top: 1px inset #91ffaa;
     border-bottom: 1px inset #111;
-    border-radius: 2px;
+    border-radius: 3px;
     padding-top: 20px;
     padding-bottom: 20px;
     /* margin-left: 1%; */

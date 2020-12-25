@@ -27,7 +27,7 @@
   hero {
     margin-top: 0;
     display: inline-block;
-    background-image: linear-gradient(rgba(150,255,170, 0.4), rgba(255,255,170, 0.45));
+    background-image: linear-gradient(rgba(150,255,170, 0.5), rgba(155,255,170, 0.35));
     /* background-image: linear-gradient(rgba(255,255,255, 0.01), rgba(0,0,0, 0.20)); */
      /* background-image: linear-gradient(rgba(150,255,170, 0.02), rgba(0,0,0, 0.20)); */
     font-size: 1.1rem;
