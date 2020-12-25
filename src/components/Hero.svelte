@@ -27,24 +27,20 @@
   hero {
     margin-top: 0;
     display: inline-block;
+    background-image: linear-gradient(rgba(150,255,170, 0.4), rgba(255,255,170, 0.45));
     /* background-image: linear-gradient(rgba(255,255,255, 0.01), rgba(0,0,0, 0.20)); */
-     background-image: linear-gradient(rgba(150,255,170, 0.02), rgba(0,0,0, 0.20));
+     /* background-image: linear-gradient(rgba(150,255,170, 0.02), rgba(0,0,0, 0.20)); */
     font-size: 1.1rem;
     font-weight: 300;
     width: 100%;
-    min-height: 120px;
-    padding: 0vh 0vw 2.5vh 0vw;
+    min-height: 200px;
+    padding: 0vh 0vw 0vh 0vw;
     margin: 0;
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     border-bottom: 1px solid rgba(0,0,0,1);
     color: #91ffaa;
     height: 40px;
     padding-left: 28%;
-  }
-  hero:hover {
-    /* background-image: linear-gradient(rgba(255,255,255, 0.09), rgba(0,0,0, 0.23)); */
-     background-image: linear-gradient(rgba(150,255,170, 0.04), rgba(0,0,0, 0.20));
-     transition: background-image 5s ease-out;
   }
   h1 {
     color: #1e1c31;

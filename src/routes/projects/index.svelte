@@ -13,6 +13,7 @@
   <div class="content">
     <h3>projects</h3>
   </div>
+  <p>(these aren't projects, just little sandboxes i'm playing with from time to time)</p>
   <div class="row">
     <a href="/canvas">
     <div class="col">

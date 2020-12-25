@@ -39,7 +39,7 @@
       projects
     </li>
   </a>
-  <a href="/blog" class:selected={selected==="/blog"}>
+  <a href="https://blog.clp.is/" class:selected={selected==="/blog"}>
     <li class="link left">
       blog
     </li>
@@ -75,8 +75,8 @@
     border-bottom: 1px solid rgba(150,255,170,0.8);
     border-radius: 3px;
     /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(150,255,170,0.03)); */
-    text-shadow: 2px 2px 2px #000;
-    transition: 0.4s ease-in-out;
+    /* text-shadow: 2px 2px 2px #000; */
+    transition: 0.2s ease-in-out;
   }
   a:active {
     color: #a1ffca;

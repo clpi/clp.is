@@ -15,7 +15,6 @@
 
 <div class="body" transition:fade>
   <Nav {selected}/>
-    <br/>
   <slot></slot>
 </div>
 <Footer/>
