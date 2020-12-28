@@ -86,7 +86,7 @@
     width: 100%;
     height: 406px;
     border-radius: 2px;
-    border: 1px solid #91ffaa;
+    border: 1px solid rgb(255,255,170);
     background: rgba(0,0,0,0.15);
     box-shadow: 0px 2px 1px #000;
   }

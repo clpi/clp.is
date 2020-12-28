@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>clp.is • home</title>
+  <title>Home • clp.is</title>
   <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
