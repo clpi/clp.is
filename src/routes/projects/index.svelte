@@ -15,12 +15,12 @@
   </div>
   <p>projects forthcoming, for now here are some convenience links</p>
   <div class="row">
-    <a href="https://github.com/clpi/dotfiles" class="projects">
+    <a href="https://github.com/clpi/dapi" class="projects">
     <div class="col projects">
-      dotfiles
+      dapi
     </div>
     </a>
-    <a href="http://clp.is/wasm" class="projects">
+    <a href="https://book.dlog.div.is" class="projects">
     <div class="col projects">
       dlog
     </div>
@@ -45,9 +45,9 @@
       github
     </div>
     </a>
-    <a href="http://clp.is/wasm" class="canvas">
+    <a href="https://github.com/clpi/dotfiles" class="canvas">
     <div class="col canvas">
-      wasm
+      dotfiles
     </div>
     </a>
   </div>

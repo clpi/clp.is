@@ -26,7 +26,7 @@
 <style>
   hero {
     display: inline-block;
-    background-image: linear-gradient(rgba(150,255,170, 0.8), rgba(255,255,170, 0.7));
+    background-image: linear-gradient(rgba(150,255,170, 0.8), rgba(255,255,170, 0.5));
     /* background-image: linear-gradient(rgba(255,255,255, 0.01), rgba(0,0,0, 0.20)); */
      /* background-image: linear-gradient(rgba(150,255,170, 0.02), rgba(0,0,0, 0.20)); */
     font-size: 1.1rem;
