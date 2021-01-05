@@ -20,7 +20,7 @@
       dapi
     </div>
     </a>
-    <a href="https://book.dlog.div.is" class="projects">
+    <a href="https://dlog.div.is" class="projects">
     <div class="col projects">
       dlog
     </div>
