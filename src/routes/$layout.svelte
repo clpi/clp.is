@@ -20,17 +20,15 @@
 <Footer/>
 
 <style>
+  /*
   .body {
-    /* margin-bottom: -100px; */
     min-height: 100%;
     position: relative;
     padding-bottom: 100px;
-    /* min-height: calc(100vh); */
   }
   :global(body) {
     background-color: #26253b;
     background-color: #27263c;
-    /* background-color: #efefef; */
       width: 100%;
       height: 100%;
       max-width: 100%;
@@ -80,5 +78,7 @@
     text-shadow: 0.5px 1.5px 2.5px rgba(0,0,0,0.7);
 
   }
+  -->
+  */
 </style>
 
