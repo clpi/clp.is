@@ -1,21 +1,21 @@
 <script>
-  import Nav from '$components/Nav.svelte';
-  import Footer from '$components/Footer.svelte';
-  import { fade } from 'svelte/transition';
-  export let selected = "/";
-  export let title = "home";
+    import Nav from '$components/Nav.svelte';
+    import Footer from '$components/Footer.svelte';
+    import { fade } from 'svelte/transition';
+    export let selected = "/";
+    export let title = "home";
     function handleClick() {
 
-      }
+    }
     function handleScroll() {
 
-      }
+    }
 </script>
 <svelte:window on:click={handleClick} on:scroll={handleScroll}/>
 
 <div class="body" transition:fade>
-  <Nav {selected}/>
-  <slot></slot>
+    <Nav {selected}/>
+    <slot></slot>
 </div>
 <Footer/>
 

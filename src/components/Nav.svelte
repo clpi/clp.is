@@ -15,7 +15,7 @@
 <ul>
   <li>
     <a href="/" class="title">
-      clp<span class="h2">.is</span>&nbsp;_
+      .clp<span class="h2">.is</span>&nbsp;_
     </a>
   </li>
   <li></li>
